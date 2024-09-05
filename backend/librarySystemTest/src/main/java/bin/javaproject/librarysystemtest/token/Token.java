@@ -1,7 +1,7 @@
-package bin.javaproject.librarysystemtest.entity;
+package bin.javaproject.librarysystemtest.token;
 
 
-import bin.javaproject.librarysystemtest.Enum.TokenType;
+import bin.javaproject.librarysystemtest.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

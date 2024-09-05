@@ -1,6 +1,5 @@
 package bin.javaproject.librarysystemtest.auditing;
-
-import bin.javaproject.librarysystemtest.entity.User;
+import bin.javaproject.librarysystemtest.user.User;
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;

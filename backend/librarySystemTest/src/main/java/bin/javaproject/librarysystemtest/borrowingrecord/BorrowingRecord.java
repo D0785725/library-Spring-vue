@@ -1,5 +1,7 @@
-package bin.javaproject.librarysystemtest.entity;
+package bin.javaproject.librarysystemtest.borrowingrecord;
 
+import bin.javaproject.librarysystemtest.inventory.Inventory;
+import bin.javaproject.librarysystemtest.user.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;

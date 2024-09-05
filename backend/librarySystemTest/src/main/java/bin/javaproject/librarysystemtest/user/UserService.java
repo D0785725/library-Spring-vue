@@ -1,11 +1,9 @@
-package bin.javaproject.librarysystemtest.service;
+package bin.javaproject.librarysystemtest.user;
 
-import bin.javaproject.librarysystemtest.entity.User;
 import bin.javaproject.librarysystemtest.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 

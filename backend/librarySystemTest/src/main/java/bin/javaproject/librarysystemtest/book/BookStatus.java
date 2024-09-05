@@ -1,4 +1,4 @@
-package bin.javaproject.librarysystemtest.Enum;
+package bin.javaproject.librarysystemtest.book;
 
 public enum BookStatus {
     AVAILABLE("在庫"),

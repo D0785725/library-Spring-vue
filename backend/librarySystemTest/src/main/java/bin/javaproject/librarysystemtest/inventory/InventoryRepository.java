@@ -1,6 +1,5 @@
-package bin.javaproject.librarysystemtest.repository;
+package bin.javaproject.librarysystemtest.inventory;
 
-import bin.javaproject.librarysystemtest.entity.Inventory;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

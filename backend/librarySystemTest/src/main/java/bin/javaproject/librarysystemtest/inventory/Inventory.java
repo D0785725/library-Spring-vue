@@ -1,6 +1,6 @@
-package bin.javaproject.librarysystemtest.entity;
+package bin.javaproject.librarysystemtest.inventory;
 
-import bin.javaproject.librarysystemtest.Enum.BookStatus;
+import bin.javaproject.librarysystemtest.book.BookStatus;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;

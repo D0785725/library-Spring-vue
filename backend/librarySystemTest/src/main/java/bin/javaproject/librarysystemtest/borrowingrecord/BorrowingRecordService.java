@@ -1,17 +1,14 @@
-package bin.javaproject.librarysystemtest.service;
+package bin.javaproject.librarysystemtest.borrowingrecord;
 
-import bin.javaproject.librarysystemtest.Enum.BookStatus;
-import bin.javaproject.librarysystemtest.entity.BorrowingRecord;
-import bin.javaproject.librarysystemtest.entity.Inventory;
+import bin.javaproject.librarysystemtest.book.BookStatus;
 import bin.javaproject.librarysystemtest.entity.User;
-import bin.javaproject.librarysystemtest.repository.BorrowingRecordRepository;
-import bin.javaproject.librarysystemtest.repository.InventoryRepository;
+import bin.javaproject.librarysystemtest.inventory.Inventory;
+import bin.javaproject.librarysystemtest.inventory.InventoryRepository;
 import bin.javaproject.librarysystemtest.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 

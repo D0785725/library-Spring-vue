@@ -1,6 +1,5 @@
-package bin.javaproject.librarysystemtest.repository;
+package bin.javaproject.librarysystemtest.borrowingrecord;
 
-import bin.javaproject.librarysystemtest.entity.BorrowingRecord;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

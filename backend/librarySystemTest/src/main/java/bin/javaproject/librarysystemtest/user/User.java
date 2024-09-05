@@ -1,4 +1,4 @@
-package bin.javaproject.librarysystemtest.entity;
+package bin.javaproject.librarysystemtest.user;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

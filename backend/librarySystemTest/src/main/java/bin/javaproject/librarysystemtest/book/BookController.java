@@ -1,7 +1,5 @@
-package bin.javaproject.librarysystemtest.controller;
+package bin.javaproject.librarysystemtest.book;
 
-import bin.javaproject.librarysystemtest.entity.Book;
-import bin.javaproject.librarysystemtest.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

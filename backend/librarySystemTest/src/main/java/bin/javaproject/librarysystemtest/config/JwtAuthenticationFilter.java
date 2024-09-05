@@ -1,7 +1,6 @@
 package bin.javaproject.librarysystemtest.config;
 
-import bin.javaproject.librarysystemtest.repository.TokenRepository;
-import bin.javaproject.librarysystemtest.service.JwtService;
+import bin.javaproject.librarysystemtest.token.TokenRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

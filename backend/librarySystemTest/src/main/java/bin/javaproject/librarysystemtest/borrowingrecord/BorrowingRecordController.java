@@ -1,7 +1,5 @@
-package bin.javaproject.librarysystemtest.controller;
+package bin.javaproject.librarysystemtest.borrowingrecord;
 
-import bin.javaproject.librarysystemtest.entity.BorrowingRecord;
-import bin.javaproject.librarysystemtest.service.BorrowingRecordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

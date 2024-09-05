@@ -1,17 +1,18 @@
 package bin.javaproject.librarysystemtest.auth;
 
 
-import bin.javaproject.librarysystemtest.Enum.TokenType;
-import bin.javaproject.librarysystemtest.entity.Token;
-import bin.javaproject.librarysystemtest.entity.User;
-import bin.javaproject.librarysystemtest.repository.TokenRepository;
-import bin.javaproject.librarysystemtest.repository.UserRepository;
-import bin.javaproject.librarysystemtest.service.JwtService;
+import bin.javaproject.librarysystemtest.token.TokenType;
+import bin.javaproject.librarysystemtest.token.Token;
+import bin.javaproject.librarysystemtest.user.User;
+import bin.javaproject.librarysystemtest.token.TokenRepository;
+import bin.javaproject.librarysystemtest.user.UserRepository;
+import bin.javaproject.librarysystemtest.config.JwtService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

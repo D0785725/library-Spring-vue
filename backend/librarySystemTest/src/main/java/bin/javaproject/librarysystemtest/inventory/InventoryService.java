@@ -1,7 +1,5 @@
-package bin.javaproject.librarysystemtest.service;
+package bin.javaproject.librarysystemtest.inventory;
 
-import bin.javaproject.librarysystemtest.entity.Inventory;
-import bin.javaproject.librarysystemtest.repository.InventoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
