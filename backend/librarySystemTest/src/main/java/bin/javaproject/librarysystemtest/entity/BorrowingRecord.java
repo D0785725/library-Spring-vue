@@ -1,5 +1,6 @@
 package bin.javaproject.librarysystemtest.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,7 +17,7 @@ public class BorrowingRecord {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private User user;

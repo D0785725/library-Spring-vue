@@ -56,7 +56,7 @@ public class BorrowingRecordService {
         record.setInventory(inventory);
         borrowingRecordRepository.save(record); // 保存時，@PrePersist 自動設置 borrowingTime 和 expectedReturnTime
 
-        // 更新書籍狀態為已借閱
+
         inventory.setStatus(BookStatus.BORROWED);
         inventoryRepository.save(inventory);
     }
