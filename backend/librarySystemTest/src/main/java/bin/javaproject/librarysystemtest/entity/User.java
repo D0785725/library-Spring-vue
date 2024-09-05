@@ -1,6 +1,8 @@
 package bin.javaproject.librarysystemtest.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,11 +11,12 @@ import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
 
 
-
+@Builder
 @Data
 @NoArgsConstructor
 @Entity
 @Table(name = "users")
+@AllArgsConstructor
 public class User {
     public User(String userName, String phoneNumber, String password) {
         this.userName = userName;
