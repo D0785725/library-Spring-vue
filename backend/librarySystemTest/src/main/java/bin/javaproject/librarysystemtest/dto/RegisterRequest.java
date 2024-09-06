@@ -1,5 +1,6 @@
 package bin.javaproject.librarysystemtest.dto;
 
+import bin.javaproject.librarysystemtest.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,4 +14,5 @@ public class RegisterRequest {
     private String userName;
     private String phoneNumber;
     private String password;
+    private Role role;
 }

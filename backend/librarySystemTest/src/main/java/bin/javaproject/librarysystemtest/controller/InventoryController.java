@@ -2,17 +2,19 @@ package bin.javaproject.librarysystemtest.controller;
 
 import bin.javaproject.librarysystemtest.entity.Inventory;
 import bin.javaproject.librarysystemtest.service.InventoryService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/inventories")
+@RequestMapping("/api/v1/inventories")
+@RequiredArgsConstructor
 public class InventoryController {
 
-    @Autowired
-    private InventoryService inventoryService;
+
+    private final InventoryService inventoryService;
 
     @GetMapping
     public List<Inventory> getAllInventories() {

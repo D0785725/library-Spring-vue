@@ -37,7 +37,7 @@ public class AuthenticationService {
         var user = User.builder()
                 .userName(request.getUserName())
                 .phoneNumber(request.getPhoneNumber())
-                .password(request.getPassword()) //encoder
+                .password(passwordEncoder.encode(request.getPassword())) //encoder
                 .build();
 
         var savedUser = repository.save(user);
@@ -70,6 +70,17 @@ public class AuthenticationService {
                         request.getPassword()
                 )
         );
+
+        var user = repository.findByPhoneNumber(request.getPhoneNumber())
+                .orElseThrow();
+        var jwtToken = jwtService.generateToken(user);
+        var refreshToken = jwtService.generateRefreshToken(user);
+        revokeAllUserTokens(user);
+        savedUserToken(user,jwtToken);
+        return AuthenticationResponse.builder()
+                .accessToken(jwtToken)
+                    .refreshToken(refreshToken)
+                .build();
     }
 
     public void refreshToken(HttpServletRequest request, HttpServletResponse response)

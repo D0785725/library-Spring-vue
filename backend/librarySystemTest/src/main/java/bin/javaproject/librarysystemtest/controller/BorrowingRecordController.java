@@ -2,21 +2,20 @@ package bin.javaproject.librarysystemtest.controller;
 
 import bin.javaproject.librarysystemtest.service.BorrowingRecordService;
 import bin.javaproject.librarysystemtest.entity.BorrowingRecord;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/borrowing-records")
+@RequestMapping("/api/v1/borrowing-records")
+@RequiredArgsConstructor
 public class BorrowingRecordController {
 
 
     private final BorrowingRecordService borrowingRecordService;
-    @Autowired
-    public BorrowingRecordController(BorrowingRecordService borrowingRecordService) {
-        this.borrowingRecordService = borrowingRecordService;
-    }
+
 
     @GetMapping("/records")
     public List<BorrowingRecord> getBorrowingRecords() {
