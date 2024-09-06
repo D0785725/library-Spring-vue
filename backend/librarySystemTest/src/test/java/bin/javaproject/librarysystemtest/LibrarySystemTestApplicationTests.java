@@ -1,11 +1,11 @@
 package bin.javaproject.librarysystemtest;
 
-import bin.javaproject.librarysystemtest.book.BookStatus;
-import bin.javaproject.librarysystemtest.book.Book;
-import bin.javaproject.librarysystemtest.inventory.Inventory;
-import bin.javaproject.librarysystemtest.book.BookRepository;
+import bin.javaproject.librarysystemtest.enums.BookStatus;
+import bin.javaproject.librarysystemtest.entity.Book;
+import bin.javaproject.librarysystemtest.entity.Inventory;
+import bin.javaproject.librarysystemtest.repository.BookRepository;
 
-import bin.javaproject.librarysystemtest.inventory.InventoryRepository;
+import bin.javaproject.librarysystemtest.repository.InventoryRepository;
 import bin.javaproject.librarysystemtest.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -2,7 +2,7 @@ package bin.javaproject.librarysystemtest.config;
 
 
 import bin.javaproject.librarysystemtest.auditing.ApplicationAuditAware;
-import bin.javaproject.librarysystemtest.user.UserRepository;
+import bin.javaproject.librarysystemtest.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
